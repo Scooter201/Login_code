@@ -1,0 +1,57 @@
+#print("This program is used to create a username and password for the user")
+
+#Asks question
+
+#Print("Would you like to create your user profile?")
+
+#Response yes or not
+
+#Program asks for first name
+
+print("Enter your first name.")
+fname=input()
+#Program then asks for last name
+
+print("Enter your last name.")
+lname=input()
+
+#Program then asks for birthday
+
+print("Enter your date of birth.")
+bday=input()
+
+#program then asks for username
+
+print("Enter your username.")
+uname=input()
+
+#program then asks for password
+
+while True:
+    print ("Enter your password.")
+    pword=input()
+
+#program asks to verify password
+
+    print("Confirm password.")
+    pword2=input()
+
+#program then compares the 2 passwords
+
+    if pword == pword2:
+        print ("Password successfully created.")
+        break
+    else:
+      print("Passwords do not match, try again.")
+            
+# Then program greets user
+
+print (("Hello ")+fname+(" ")+lname+(" you have successfully created your user profile!"))
+
+#asks for verifcation
+print("Please verify all your information is correct.")
+
+#variable for all information
+allinfo=print (("First name-")+fname+("\nLast name-")+lname+("\nBirthday-")+bday+("\nUsername-")+uname+("\nPassword-")+pword)
+
+allinfo
